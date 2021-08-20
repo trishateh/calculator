@@ -1,0 +1,92 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 0;
+    margin: 0px;
+    
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 3px solid 10px whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px, 5px, 5px;
+}
+
+.display .previousOperation {
+    color:rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+
+}
+
+.display .currentOperation {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.container {
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 5px 10px 30px;
+    border: 2px solid 20px white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(46, 45, 45);
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: lightgrey;
+    font-family: inherit;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+}
+
+button:hover {
+    background-color: rgb(155, 154, 154);
+}
+
+.span-two {
+    grid-column: span 2;
+    background-color: orange;
+}
+
+.span-two:hover {
+    background-color: darkorange;
+}
+
+.operator {
+    background-color: rgb(159, 245, 241);
+}
+
+.operator:hover {
+    background-color: rgb(65, 247, 247);
+}
